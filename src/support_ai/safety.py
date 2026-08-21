@@ -2,7 +2,7 @@ from typing import Dict, Any
 
 class SafetyRouter:
     def __init__(self):
-        self.risky_words = ["суд", "прокуратура", "роскомнадзор", "угроза", "персональн"]
+        self.risky_words = ["суд", "прокурат", "роскомнадзор", "угроз", "персональн"]
 
     def check_ticket(self, text: str) -> Dict[str, Any]:
         text_lower = text.lower()
